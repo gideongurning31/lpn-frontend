@@ -1,10 +1,8 @@
-body {
+* {
   font-family: "Roboto", sans-serif;
 }
 
 .title {
-  background-color: #363636;
-  color: #FFFFFF;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -21,4 +19,34 @@ body {
   justify-content: center;
 }
 
-/* #F2F2F2 */
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin: 0 20%;
+  gap: 10px;
+}
+
+.buttons-wrapper,
+.buttons-wrapper>button {
+  border-radius: 10px;
+}
+
+.title,
+.buttons-wrapper>button {
+  background-color: #363636;
+  color: #FFFFFF;
+}
+
+.buttons-wrapper>button {
+  padding: 10px;
+  width: 60%;
+}
+
+.title,
+.buttons-title {
+  font-weight: bold;
+}
