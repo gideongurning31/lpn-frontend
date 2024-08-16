@@ -18,12 +18,43 @@
   <div class="image-wrapper">
     <img src="https://img17.com/pl/1/IMG_P1_1_IPHONE11ALL.png" alt="phone1">
   </div>
-  <div class="buttons-wrapper">
-    <span class="buttons-title">Grab your chance to take home iPhone 11</span>
-    <button>
+
+  <div id="question-0" class="buttons-wrapper">
+    <span class="buttons-title">
+      Grab your chance to take home iPhone 11
+    </span>
+    <button onclick="toNextButton()">
       ENTER NOW
     </button>
   </div>
+
+  <div id="question-1" class="buttons-wrapper">
+    <span class="buttons-title">
+      (1/2) Are you an Apple product user?
+    </span>
+    <button onclick="toNextButton()">
+      Yes
+    </button>
+    <button onclick="toNextButton()">
+      No
+    </button>
+  </div>
+
+  <div id="question-2" class="buttons-wrapper">
+    <span class="buttons-title">
+      (2/2) What is your favorite feature on iPhone 11
+    </span>
+    <button onclick="redirectToSomewhere()">
+      Ultra Wide and Wide lenses
+    </button>
+    <button onclick="redirectToSomewhere()">
+      Dual-lens rear camera
+    </button>
+    <button onclick="redirectToSomewhere()">
+      Splash, Water, and Dust Resistant
+    </button>
+  </div>
+
 </div>
 <!-- <img src="https://img17.com/pl/1/IMG_P1_2_IPHONE11ALL.png" alt="phone1"> -->
 <script src="jquery-3.7.1.min.js"></script>
