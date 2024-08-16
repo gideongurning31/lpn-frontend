@@ -1,5 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .title {
@@ -13,10 +14,14 @@
   flex-direction: column;
 }
 
-.image-wrapper {
+.image-wrapper-desktop {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+.image-wrapper-mobile {
+  display: none;
 }
 
 .buttons-wrapper {
@@ -57,4 +62,28 @@
 #question-1,
 #question-2 {
   display: none;
+}
+
+@media only screen and (max-width: 425px) {
+  section.title {
+    display: none;
+  }
+
+  .buttons-wrapper {
+    margin: 0;
+    padding: 10px 5px;
+  }
+
+  .buttons-wrapper>button {
+    width: 100%;
+  }
+
+  .image-wrapper-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-wrapper-desktop {
+    display: none;
+  }
 }
